@@ -10,14 +10,15 @@ let mate;
 function precioColgante() {
   do {
     colgante = parseFloat(prompt("Ingresa el precio del colgante mayor a 600"));
-  } while (isNaN(colgante));
+
   if (colgante >= 600) {
     alert("El precio establecido para el producto es " + colgante);
   } else {
     alert("El valor ingresado es incorrecto, ingrese un nuevo valor");
   }
 }
-while (isNaN(colgante) || colgante < 600);
+while (isNaN(colgante) || colgante < 600); 
+}
 //fin funcion precioColgante
 precioColgante();
 
@@ -27,7 +28,7 @@ function precioArito2() {
     arito2 = parseFloat(
       prompt("Ingresa el precio del Arito-Banda mayor a 200")
     );
-  } while (isNaN(arito2));
+
   if (arito2 >= 200) {
     alert("El precio establecido para el producto es " + arito2);
   } else {
@@ -35,6 +36,7 @@ function precioArito2() {
   }
 }
 while (isNaN(arito2) || arito2 < 200);
+}
 //fin funcion precioArito2
 precioArito2();
 
@@ -44,7 +46,7 @@ function precioArito3() {
     arito3 = parseFloat(
       prompt("Ingresa el precio del Arito-Corazon mayor a 200")
     );
-  } while (isNaN(arito3));
+
   if (arito3 >= 200) {
     alert("El precio establecido para el producto es " + arito3);
   } else {
@@ -53,6 +55,7 @@ function precioArito3() {
 }
 //fin funcion precioArito3
 while (isNaN(arito3) || arito3 < 200);
+}
 
 precioArito3();
 
@@ -62,7 +65,7 @@ function precioArito4() {
     arito4 = parseFloat(
       prompt("Ingresa el precio del Arito-Pintura mayor a 200 ")
     );
-  } while (isNaN(arito4));
+
   if (arito3 >= 200) {
     alert("El precio establecido para el producto es " + arito4);
   } else {
@@ -70,13 +73,14 @@ function precioArito4() {
   }
 }
 while (isNaN(arito4) || arito4 < 200);
+}
 precioArito4();
 
 //Precio jarra
 function precioJarra() {
   do {
     jarra = parseFloat(prompt("Ingresa el precio de la Jarra  mayor a 1000"));
-  } while (isNaN(jarra));
+
   if (jarra >= 1000) {
     alert("El precio establecido para el producto es " + jarra);
   } else {
@@ -84,6 +88,7 @@ function precioJarra() {
   }
 }
 while (isNaN(jarra) || jarra < 1000);
+}
 
 precioJarra();
 
@@ -91,7 +96,7 @@ precioJarra();
 function precioMate() {
   do {
     mate = parseFloat(prompt("Ingresa el precio del mate  mayor a 400"));
-  } while (isNaN(mate));
+
   if (mate >= 400) {
     alert("El precio establecido para el producto es " + mate);
   } else {
@@ -99,6 +104,7 @@ function precioMate() {
   }
 }
 while (isNaN(mate) || mate < 400);
+}
 
 precioMate();
 
