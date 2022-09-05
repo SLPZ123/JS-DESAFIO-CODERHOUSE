@@ -1,23 +1,20 @@
-//variables
-let colgante;
-let arito2;
-let arito3;
-let arito4;
-let jarra;
-let mate;
+//array de precio
+const precio=[0,0,0,0,0,0,];
+console.log(precio.length);
+
 
 //Precios colgante
 function precioColgante() {
   do {
-    colgante = parseFloat(prompt("Ingresa el precio del colgante mayor a 600"));
+    precio[0] = parseFloat(prompt("Ingresa el precio del colgante mayor a 600"));
 
-  if (colgante >= 600) {
-    alert("El precio establecido para el producto es " + colgante);
+  if (precio[0] >= 600) {
+    alert("El precio establecido para el producto es " + precio[0]);
   } else {
     alert("El valor ingresado es incorrecto, ingrese un nuevo valor");
   }
 }
-while (isNaN(colgante) || colgante < 600); 
+while (isNaN(precio[0]) || precio[0] < 600);
 }
 //fin funcion precioColgante
 precioColgante();
@@ -25,17 +22,17 @@ precioColgante();
 //Precio Arito2
 function precioArito2() {
   do {
-    arito2 = parseFloat(
+    precio[1] = parseFloat(
       prompt("Ingresa el precio del Arito-Banda mayor a 200")
     );
 
-  if (arito2 >= 200) {
-    alert("El precio establecido para el producto es " + arito2);
+  if (precio[1] >= 200) {
+    alert("El precio establecido para el producto es " + precio[1]);
   } else {
     alert("El valor ingresado es incorrecto, ingrese un nuevo valor");
   }
 }
-while (isNaN(arito2) || arito2 < 200);
+while (isNaN(precio[1]) ||precio[1] < 200);
 }
 //fin funcion precioArito2
 precioArito2();
@@ -43,18 +40,18 @@ precioArito2();
 //Precio arito3
 function precioArito3() {
   do {
-    arito3 = parseFloat(
+    precio[2] = parseFloat(
       prompt("Ingresa el precio del Arito-Corazon mayor a 200")
     );
 
-  if (arito3 >= 200) {
-    alert("El precio establecido para el producto es " + arito3);
+  if ( precio[2] >= 200) {
+    alert("El precio establecido para el producto es " +  precio[2]);
   } else {
     alert("El valor ingresado es incorrecto, ingrese un nuevo valor");
   }
 }
 //fin funcion precioArito3
-while (isNaN(arito3) || arito3 < 200);
+while (isNaN( precio[2]) || precio[2] < 200);
 }
 
 precioArito3();
@@ -62,32 +59,32 @@ precioArito3();
 //Precio arito4
 function precioArito4() {
   do {
-    arito4 = parseFloat(
+    precio[3] = parseFloat(
       prompt("Ingresa el precio del Arito-Pintura mayor a 200 ")
     );
 
-  if (arito3 >= 200) {
-    alert("El precio establecido para el producto es " + arito4);
+  if ( precio[3] >= 200) {
+    alert("El precio establecido para el producto es " +  precio[3]);
   } else {
     alert("El valor ingresado es incorrecto, ingrese un nuevo valor");
   }
 }
-while (isNaN(arito4) || arito4 < 200);
+while (isNaN( precio[3]) || precio[3] < 200);
 }
 precioArito4();
 
 //Precio jarra
 function precioJarra() {
   do {
-    jarra = parseFloat(prompt("Ingresa el precio de la Jarra  mayor a 1000"));
+    precio[4] = parseFloat(prompt("Ingresa el precio de la Jarra  mayor a 1000"));
 
-  if (jarra >= 1000) {
-    alert("El precio establecido para el producto es " + jarra);
+  if (precio[4]>= 1000) {
+    alert("El precio establecido para el producto es " + precio[4]);
   } else {
     alert("El valor ingresado es incorrecto, ingrese un nuevo valor");
   }
 }
-while (isNaN(jarra) || jarra < 1000);
+while (isNaN(precio[4]) || precio[4] < 1000);
 }
 
 precioJarra();
@@ -95,15 +92,15 @@ precioJarra();
 //Precio  mate
 function precioMate() {
   do {
-    mate = parseFloat(prompt("Ingresa el precio del mate  mayor a 400"));
+    precio[5] = parseFloat(prompt("Ingresa el precio del mate  mayor a 400"));
 
-  if (mate >= 400) {
-    alert("El precio establecido para el producto es " + mate);
+  if (precio[5] >= 400) {
+    alert("El precio establecido para el producto es " + precio[5]);
   } else {
     alert("El valor ingresado es incorrecto, ingrese un nuevo valor");
   }
 }
-while (isNaN(mate) || mate < 400);
+while (isNaN(precio[5]) || precio[5] < 400);
 }
 
 precioMate();
@@ -120,30 +117,30 @@ function agregarCarrito() {
         "****Tienda Artesanal Mambo Mistico****\n  Ingrese el codigo del producto que desea obtener(1-6).\n Para finalizar la compra ingrese el numero 7"
       )
     );
-    //switch productos
+    //switch precio
     switch (codigo) {
       case 1:
-        inicio += colgante;
+        inicio += precio[0];
         break;
 
       case 2:
-        inicio += arito2;
+        inicio += precio[1];
         break;
 
       case 3:
-        inicio += arito3;
+        inicio += precio[2];
         break;
 
       case 4:
-        inicio += arito4;
+        inicio += precio[3];
         break;
 
       case 5:
-        inicio += jarra;
+        inicio += precio[4];
         break;
 
       case 6:
-        inicio += mate;
+        inicio += precio[5];
         break;
       case 7:
         //total de la compra
