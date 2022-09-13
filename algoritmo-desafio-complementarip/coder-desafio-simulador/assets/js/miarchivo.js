@@ -1,5 +1,5 @@
 
-let total =0;
+let cantidadContadorCarrito =0;
 const mostrarProductos = (productos) => {
   const contenedorProductos = document.getElementById("producto-contenedor")
 
@@ -7,7 +7,7 @@ const mostrarProductos = (productos) => {
       const div = document.createElement("div")
       div.classList.add("card")
       div.innerHTML += `<div class="col-md-4">
-                        <div class="card bg-dark ">
+                        <div class="bg-dark ">
                           <img src="${producto.img}" class="card-img-top" alt="...">
                           <div class="card-body">
                               <h2 class="card-title text-white">${producto.nombre}</h2>

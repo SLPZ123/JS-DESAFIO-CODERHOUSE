@@ -41,7 +41,7 @@ const productos = [
         cantidad:1
     },
     {
-        id:5,
+        id:6,
         nombre:"Mate",
         desc:"Mate de ceramica de color rojo o rosa",
         precio:800,
