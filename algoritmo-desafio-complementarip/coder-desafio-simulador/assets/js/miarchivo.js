@@ -1,4 +1,5 @@
 
+let total =0;
 const mostrarProductos = (productos) => {
   const contenedorProductos = document.getElementById("producto-contenedor")
 
@@ -25,7 +26,7 @@ const mostrarProductos = (productos) => {
       const boton = document.getElementById( `boton${producto.id}` )
 
       boton.addEventListener('click', ()=> {
-          carritoIndex(producto.id)
+          total(producto.id)
           alert(`Se agrego el producto ${producto.nombre}`)
       })
 
