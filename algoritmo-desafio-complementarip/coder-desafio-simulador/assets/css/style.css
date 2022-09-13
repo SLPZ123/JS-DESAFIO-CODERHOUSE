@@ -134,7 +134,11 @@ body::-webkit-scrollbar-thumb {
   .nav-link:hover,
   .nav-link :focus {
     background-size: 100% 2px !important; }
-
+.carrito-menu{
+  width: 15px;
+  height: 15px;
+  background-color:#561480 ;
+}
 /*------------------------------------Main index--------------------------*/
 .main_gallery {
   width: auto;
