@@ -6,7 +6,7 @@ const productos = [
         desc:"",
         precio:1500,
         img:"./assets./img/colgante.png",
-        cantidad:5
+        cantidad:1
 
     },
     {
@@ -15,7 +15,7 @@ const productos = [
         desc:"",
         precio:500,
         img:"./assets./img/arobanda1.png",
-        cantidad:5
+        cantidad:1
     },
     {
         id:3,
@@ -23,7 +23,7 @@ const productos = [
         desc:"aro artesanal de forma de corazon",
         precio:500,
         img: "./assets/img/arocorazon.png",
-        cantidad:5
+        cantidad:1
     },
     {
         id:4,
@@ -31,7 +31,7 @@ const productos = [
         desc:"Aro artesanal de la noche estrellada",
         precio:500,
         img:"./assets/img/arosnoche.png",
-        cantidad:5
+        cantidad:1
     },
     {
         id:5,
@@ -39,7 +39,7 @@ const productos = [
         desc:"Jarra artesanal de ceramica de color verde",
         precio:1500,
         img:"./assets/img/jarra.jpg",
-        cantidad:5
+        cantidad:1
     },
     {
         id:6,
@@ -47,7 +47,7 @@ const productos = [
         desc:"Mate de ceramica de color rojo o rosa",
         precio:800,
         img:"./assets/img/matero.jpg",
-        cantidad:5
+        cantidad:1
     },
     {
         id:7,
@@ -55,7 +55,7 @@ const productos = [
         desc:"Plato grande de ceramica",
         precio:1500,
         img:"./assets/img/platogrande.jpg",
-        cantidad:5
+        cantidad:1
     },
     {
         id:8,
@@ -63,7 +63,6 @@ const productos = [
         desc:"Dos platos de ceramica chicos cuadrados",
         precio:2000,
         img:"./assets/img/platos.jpg",
-        cantidad:5
+        cantidad:1
     },
 ]
-

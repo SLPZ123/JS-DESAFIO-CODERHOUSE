@@ -16,7 +16,6 @@ const mostrarProductos = (productos) => {
                               <p class="card-text text-white">Precio:$ ${producto.precio}</p>
                               </div>
                               <a href="#" class="btn btn-outline-warning btnColgante"id=boton${producto.id}><img src="assets/img/carrito.png" alt="" class="carrito"/>Comprar</a>
-
                           </div>
                           </div>
                       </div>`
@@ -26,7 +25,7 @@ const mostrarProductos = (productos) => {
       const boton = document.getElementById( `boton${producto.id}` )
 
       boton.addEventListener('click', ()=> {
-          carritoIndex(producto.id)
+          agregarElemento(producto.id)
 
       })
      
