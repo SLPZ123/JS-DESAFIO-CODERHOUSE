@@ -35,7 +35,7 @@ const actualizarCarrito = () => {
   const contenedorCarrito = document.getElementById("carrito-contenedor");
   let contadorCarrito = document.getElementById("contador-carrito");
   let precioTotal = document.getElementById("precioTotal");
-
+//aparece el carrito
   contenedorCarrito.innerHTML = "";
   carritoDeCompras.forEach((producto) => {
     let div = document.createElement("div");
@@ -49,6 +49,7 @@ const actualizarCarrito = () => {
   });
   contadorCarrito.innerHTML = carritoDeCompras.length;
   precioTotal.innerText = carritoDeCompras.reduce(
+    //calcula el precio total
     (acc, producto) => acc + producto.precio * producto.cantidad,
     0
   );
