@@ -5,7 +5,7 @@ const productos = [
         nombre:"Colgante",
         desc:"",
         precio:1500,
-        img:"./assets./img/colgante.png",
+        img:"./assets/img/colgante.png",
         cantidad:1
 
     },
@@ -14,7 +14,7 @@ const productos = [
         nombre:"arito2",
         desc:"",
         precio:500,
-        img:"./assets./img/arobanda1.png",
+        img:"./assets/img/arobanda1.png",
         cantidad:1
     },
     {

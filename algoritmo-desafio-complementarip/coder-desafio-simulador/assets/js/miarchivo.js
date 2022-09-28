@@ -27,8 +27,9 @@ const mostrarProductos = (productos) => {
       boton.addEventListener('click', ()=> {
           agregarElemento(producto.id)
 
+
       })
-     
+
 
   })
 }

@@ -61,7 +61,7 @@ body::-webkit-scrollbar-thumb {
 
 /*----------------------header---------------*/
 .header_container {
-  background-image: url(../img/scene00.jpg);
+  background-image: url(../../assets/img/scene00.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
