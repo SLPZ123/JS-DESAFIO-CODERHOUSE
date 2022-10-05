@@ -1,12 +1,25 @@
+let productos;
+let myprm = new Promise((resolve,reject) => {
+  fetch("./assets/js/productos.json")
+    .then((res) => {
+      return resolve(res.json())
+    })
+    .then((data) => {
+      return resolve(data);
+    })
+  }
+).then((productos) => {
+  productos = data;
+});
 
-let cantidadContadorCarrito =0;
+let cantidadContadorCarrito = 0;
 const mostrarProductos = (productos) => {
-  const contenedorProductos = document.getElementById("producto-contenedor")
-//card
-  productos.forEach(producto => {
-      const div = document.createElement("div")
-      div.classList.add("col-md-4")
-      div.innerHTML += `<div class="card">
+  const contenedorProductos = document.getElementById("producto-contenedor");
+  //card
+  productos.forEach((producto) => {
+    const div = document.createElement("div");
+    div.classList.add("col-md-4");
+    div.innerHTML += `<div class="card">
                           <div class="bg-dark ">
                           <img src="${producto.img}" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -18,21 +31,16 @@ const mostrarProductos = (productos) => {
                               <a href="#" class="btn btn-outline-warning btnColgante"id=boton${producto.id}><img src="assets/img/carrito.png" alt="" class="carrito"/>Comprar</a>
                           </div>
                           </div>
-                      </div>`
+                      </div>`;
 
-      contenedorProductos.appendChild(div)
+    contenedorProductos.appendChild(div);
 
-      const boton = document.getElementById( `boton${producto.id}` )
+    const boton = document.getElementById(`boton${producto.id}`);
 
-      boton.addEventListener('click', ()=> {
-          agregarElemento(producto.id)
+    boton.addEventListener("click", () => {
+      agregarElemento(producto.id);
+    });
+  });
+};
 
-
-      })
-
-
-  })
-}
-
-
-mostrarProductos(productos)
+mostrarProductos(productos);
