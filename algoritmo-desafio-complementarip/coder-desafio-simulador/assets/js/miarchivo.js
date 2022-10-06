@@ -1,18 +1,21 @@
 let productos;
-let myprm = new Promise((resolve,reject) => {
-  fetch("./assets/js/productos.json")
-    .then((res) => {
-      return resolve(res.json())
-    })
-    .then((data) => {
-      return resolve(data);
-    })
-  }
-).then((productos) => {
-  productos = data;
-});
-
 let cantidadContadorCarrito = 0;
+function getJson() {
+  return new Promise((resolve, reject) => {
+    resolve(fetch('./assets/js/productos.json'));
+  })
+}
+async function fetchingData() {
+  const result = await getJson()
+    .then((resp) => resp.json())
+    .then((data) => {
+      productos = data;
+      mostrarProductos(productos);
+      addSweet();
+    });
+}
+fetchingData();
+
 const mostrarProductos = (productos) => {
   const contenedorProductos = document.getElementById("producto-contenedor");
   //card
@@ -42,5 +45,3 @@ const mostrarProductos = (productos) => {
     });
   });
 };
-
-mostrarProductos(productos);

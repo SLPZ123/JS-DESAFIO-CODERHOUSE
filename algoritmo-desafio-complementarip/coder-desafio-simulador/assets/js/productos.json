@@ -3,7 +3,7 @@
     {
         "id":1,
         "nombre":"Colgante",
-        "desc":"",
+        "desc":"Colgante artesanal pintado a mano",
         "precio":1500,
         "img":"./assets/img/colgante.png",
         "cantidad":1
@@ -12,7 +12,7 @@
     {
         "id":2,
         "nombre":"arito2",
-        "desc":"",
+        "desc":"Par de aros recicla",
         "precio":500,
         "img":"./assets/img/arobanda1.png",
         "cantidad":1

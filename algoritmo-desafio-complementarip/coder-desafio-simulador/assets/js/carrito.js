@@ -1,14 +1,5 @@
 let carritoDeCompras = [];
 
-/*
-fetch('productos.json')
-.then(res=> res.json())
-.then(res=> console.log(productos))/ */
-//fetch
-
-
-
-
 
 //localStorage
 document.addEventListener("DOMContentLoaded", () => {
@@ -48,7 +39,6 @@ const actualizarCarrito = () => {
   let precioTotal = document.getElementById("precioTotal");
 //aparece el carrito
   contenedorCarrito.innerHTML = "";
-  const carritoDeCompras=(arrayDeProductos)=>{
   carritoDeCompras.forEach((producto) => {
     let div = document.createElement("div");
     div.classList.add("productoEnCarrito");
@@ -65,4 +55,4 @@ const actualizarCarrito = () => {
     (acc, producto) => acc + producto.precio * producto.cantidad,
     0
   );
-};}
+};
