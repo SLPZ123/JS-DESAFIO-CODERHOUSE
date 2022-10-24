@@ -6,7 +6,7 @@ async function handleSubmit(event) {
   event.preventDefault();
   const myForm = new FormData(this);
   const response = await fetch(this.action, {
-    method: this.method,
+    method: 'POST',
     body: myForm,
     headers: {
       'Accept': 'application/json',

@@ -588,7 +588,12 @@ body::-webkit-scrollbar-thumb {
     transform: rotate(45deg); }
 
 
-    
+label.error{
+  margin: 0px;
+  display: block;
+  color: red;
+
+}
 /* ----- -----  Estilos para Validacion ----- ----- */
 .formulario__grupo-correcto .formulario__validacion-estado {
 	color: #1ed12d;
