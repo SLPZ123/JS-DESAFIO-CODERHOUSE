@@ -32,4 +32,31 @@ $(document).ready(function () {
       }
     }
   })
+  $("#form").on('submit', function(e){
+		var isvalid = $("#form").valid();
+		if(isvalid){
+			handleSubmit(e);
+		}
+	})
 });
+const form = document.getElementById('form');
+
+async function handleSubmit(event) {
+	event.preventDefault();
+	const myForm = new FormData(form);
+	const response = await fetch(myForm.action, {
+	  method: 'POST',
+	  body: myForm,
+	  headers: {
+		'Accept': 'application/json'
+	  }
+	});
+	if (response.ok) {
+		myForm.reset();
+		Swal.fire({
+		  title: "Excelente",
+		  text: "El formulario fue enviado con exito",
+		  icon: "success"
+		});
+	}
+  }
