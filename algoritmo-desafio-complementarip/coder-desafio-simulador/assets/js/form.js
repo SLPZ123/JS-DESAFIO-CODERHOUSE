@@ -1,5 +1,6 @@
 $(document).ready(function(){
 ('#form').validate({
+    //reglas que debe cumplir el formulario
 rules:{
     name:{required:true,
     minlength:4
@@ -17,6 +18,7 @@ phone:{required:true,
     minlength:8,
 }
 },
+//mensajes que aparecen
 messages:{
     name:{
     required:"El nombre es requerido",
@@ -30,7 +32,7 @@ messages:{
 
     email:{
         required:"El email es requerido",
-       email:"El correo no es valido"
+        email:"El correo no es valido"
 
 
     },

@@ -1,3 +1,4 @@
+//variables
 let carritoDeCompras = [];
 const contenedorCarrito = document.getElementById("carrito-contenedor");
 const btnVaciarCarrito = document.getElementById("vaciar-carrito");
@@ -47,7 +48,7 @@ function vaciarCarrito(){
 };
 
 function actualizarCarrito(){
-//aparece el carrito
+//aparece el carrito en forma de tabla 
   contenedorCarrito.innerHTML = "";
   carritoDeCompras.forEach((producto) => {
     let row = document.createElement('tr');
@@ -72,7 +73,7 @@ function actualizarCarrito(){
   );
   precioTotal.innerText = total;
 };
-
+//comprar y dirigir a whassap
 function comprarCarrito(){
   let text = "Hola! Me gustaria comprar los siguientes articulos:\n"
   carritoDeCompras.forEach((producto) => {
