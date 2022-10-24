@@ -1,4 +1,4 @@
-//agregar alert al seleccionar un producto
+//agregar alert al finalizar la tarea
 function addSweet() {
   let btn = document.getElementsByClassName("btn");
   for (var i = 0; i < btn.length; i++) {
